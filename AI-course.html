@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 時代的生存指南：從焦慮到駕馭</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px rgba(255, 255, 255, 0.1) solid;
+            position: relative;
+            z-index: 10;
+        }
+        .slogan-banner {
+            background: linear-gradient(90deg, #4f46e5, #06b6d4);
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        /* 確保連結在點擊時有明顯反應 */
+        .btn-click-effect:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 overflow-x-hidden">
+
+    <!-- 頁首區塊 -->
+    <header class="relative min-h-screen flex items-center justify-center pt-20 pb-12 px-6 overflow-hidden gradient-bg">
+        <div class="absolute inset-0 opacity-20 z-0">
+            <div class="absolute top-10 left-10 w-64 h-64 bg-indigo-500 rounded-full blur-[100px] animate-pulse"></div>
+            <div class="absolute bottom-10 right-10 w-80 h-80 bg-cyan-500 rounded-full blur-[100px] animate-pulse"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-5xl mx-auto text-center">
+            <div class="inline-block px-4 py-1 mb-6 border border-indigo-400 rounded-full text-indigo-300 text-sm font-medium tracking-widest">
+                AI 基礎入門課程
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                AI 時代的生存指南：<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">從焦慮到駕馭</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto">
+                在這個 AI 焦慮的時代，教你用對的方式擁抱科技，讓學習變成一種享受。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#register" class="px-8 py-4 bg-indigo-600 hover:bg-indigo-500 rounded-xl font-bold transition-all transform hover:scale-105 shadow-lg shadow-indigo-500/20 btn-click-effect">
+                    立即預約報名
+                </a>
+                <a href="#why" class="px-8 py-4 bg-slate-800 hover:bg-slate-700 rounded-xl font-bold transition-all btn-click-effect">
+                    了解更多課程細節
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 為什麼我們需要這堂課？ -->
+    <section id="why" class="py-24 px-6 bg-slate-900">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">為什麼我們需要這堂課？</h2>
+                <div class="w-20 h-1 bg-indigo-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="glass-card p-8 rounded-2xl hover:bg-slate-800/50 transition-all">
+                    <div class="text-indigo-400 mb-4 text-3xl font-bold">01</div>
+                    <p class="text-slate-300 leading-relaxed">
+                        你是否打開 AI 軟體，卻只會簡單地問它幾個問題就結束？
+                    </p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl hover:bg-slate-800/50 transition-all">
+                    <div class="text-indigo-400 mb-4 text-3xl font-bold">02</div>
+                    <p class="text-slate-300 leading-relaxed">
+                        你是否擔心 AI 會取代你的工作，卻不知道該從何處開始學習？
+                    </p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl hover:bg-slate-800/50 transition-all">
+                    <div class="text-indigo-400 mb-4 text-3xl font-bold">03</div>
+                    <p class="text-slate-300 leading-relaxed">
+                        你是否常覺得 AI 給的答案太廢，根本沒參考價值？
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center p-8 bg-indigo-900/20 rounded-2xl border border-indigo-800/50">
+                <p class="text-lg text-indigo-200">
+                    我們正處於一個 AI 焦慮時代，但真正的問題不在 AI 太強，<br class="hidden md:block">
+                    而在於我們還沒學會如何與這位<strong>「新同事」</strong>共處。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 我們如何翻轉你的思維？ -->
+    <section id="how" class="py-24 px-6 bg-slate-800/30">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-3xl font-bold mb-4">我們如何翻轉你的思維？</h2>
+                <p class="text-slate-400">從心態到技術，三個階段帶領你脫胎換骨</p>
+            </div>
+
+            <!-- 第一階段 -->
+            <div class="mb-24 relative">
+                <div class="flex flex-col md:flex-row gap-12 items-center">
+                    <div class="md:w-1/2">
+                        <span class="text-xs font-bold text-indigo-400 tracking-widest uppercase mb-2 block">Phase 01</span>
+                        <h3 class="text-2xl font-bold mb-6">建立「大腦外掛」的協作觀念</h3>
+                        <p class="text-slate-400 mb-6">
+                            AI 不再是「投幣式自動販賣機」，而是你的<strong>「全能實習生」</strong>。你將學會利用它擴張思考邊界，並明白「最後下判斷的人永遠是你」。
+                        </p>
+                        <div class="bg-slate-900/80 p-6 rounded-xl border-l-4 border-indigo-500 mb-6">
+                            <h4 class="font-bold text-indigo-300 mb-2">黃金提示詞公式</h4>
+                            <p class="text-slate-100 font-mono text-sm">設定角色 → 提出問題 → 給定先決條件</p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 glass-card p-6 rounded-2xl">
+                        <h4 class="font-bold mb-4 text-center">生活案例對照</h4>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-red-900/10 rounded-lg border border-red-900/20">
+                                <span class="text-xs font-bold text-red-400 uppercase">直接詢問 (人類方式)</span>
+                                <p class="text-sm italic text-slate-400 mt-1">「幫我規劃明天的台北行程。」</p>
+                                <p class="text-xs text-red-300/60 mt-2">→ AI 常給出大眾化、不符合需求的路線。</p>
+                            </div>
+                            <div class="p-4 bg-green-900/10 rounded-lg border border-green-900/20">
+                                <span class="text-xs font-bold text-green-400 uppercase">運用公式詢問</span>
+                                <p class="text-sm italic text-slate-100 mt-1">「你是一位深度旅遊導遊，請幫我規劃明天的台北行程。我喜歡寧靜的藝文空間，不喜歡人擠人，時間安排在下午 1 點到晚上 8 點，請以捷運沿線為主。」</p>
+                                <p class="text-xs text-green-300/60 mt-2">→ AI 能給出精確且具有判斷價值的行程。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第二階段 -->
+            <div class="mb-24">
+                <div class="flex flex-col md:flex-row-reverse gap-12 items-center">
+                    <div class="md:w-1/2">
+                        <span class="text-xs font-bold text-cyan-400 tracking-widest uppercase mb-2 block">Phase 02</span>
+                        <h3 class="text-2xl font-bold mb-6">讓 AI 教你跟 AI 溝通</h3>
+                        <p class="text-slate-400 mb-6">
+                            暫時寫不出好公式？別擔心，讓 AI 幫你修正！我們會教你如何利用 AI 的系統邏輯，讓它幫你優化指令。
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <div class="mt-1 p-1 bg-cyan-900/30 rounded text-cyan-400">✓</div>
+                                <div><span class="font-bold text-slate-200">AI 修正 AI：</span> 根據原始需求自動生成更精確的 Prompt。</div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="mt-1 p-1 bg-cyan-900/30 rounded text-cyan-400">✓</div>
+                                <div><span class="font-bold text-slate-200">交叉驗證：</span> 用同一組 Prompt 測試不同的大型語言模型，篩選最優解。</div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="mt-1 p-1 bg-cyan-900/30 rounded text-cyan-400">✓</div>
+                                <div><span class="font-bold text-slate-200">避開地雷：</span> 深入解析 AI 抓錯資料的原因，透過「迭代試錯」修正產出。</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center">
+                        <div class="relative glass-card p-10 rounded-full w-64 h-64 flex items-center justify-center border-2 border-cyan-500/30 animate-pulse">
+                            <div class="text-center">
+                                <span class="text-sm font-bold text-cyan-400">迭代</span><br>
+                                <span class="text-2xl font-bold">循環優化</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第三階段 -->
+            <div class="mb-12">
+                <div class="text-center mb-12">
+                    <span class="text-xs font-bold text-purple-400 tracking-widest uppercase mb-2 block">Phase 03</span>
+                    <h3 class="text-2xl font-bold mb-6">解鎖 AI 的進階應用模式</h3>
+                </div>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="glass-card p-6 rounded-2xl hover:translate-y-[-5px] transition-all border-t-4 border-purple-500">
+                        <h4 class="font-bold text-purple-300 mb-3">深入研究<br>(Deep Research)</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">橫向掃描海量文獻與資訊，如同擁有一位 24 小時不休息的研究專員。</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl hover:translate-y-[-5px] transition-all border-t-4 border-purple-500">
+                        <h4 class="font-bold text-purple-300 mb-3">代理模式<br>(AI Agent)</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">AI 不只會說，還會動手做。自動化執行多步驟的複雜任務。</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl hover:translate-y-[-5px] transition-all border-t-4 border-purple-500">
+                        <h4 class="font-bold text-purple-300 mb-3">視覺圖表化</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">將枯燥的數據，一鍵轉化為易於判斷、美觀的視覺報表。</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl hover:translate-y-[-5px] transition-all border-t-4 border-purple-500">
+                        <h4 class="font-bold text-purple-300 mb-3">AI Studio<br>製作網站</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">無需代碼，透過對話就能快速搭建出個人或產品網站。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 這堂課你將學到什麼？ -->
+    <section id="what" class="py-24 px-6 gradient-bg">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">這堂課你將學到什麼？</h2>
+                <p class="text-slate-400">從「被動接收答案」變成「主動精準判斷」</p>
+            </div>
+
+            <div class="space-y-6">
+                <div class="flex items-center gap-6 p-6 glass-card rounded-2xl">
+                    <div class="flex-shrink-0 w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center font-bold">1</div>
+                    <div>
+                        <h4 class="font-bold text-lg text-indigo-300">精準指令學 (Prompt Engineering)</h4>
+                        <p class="text-slate-400">不再亂槍打鳥，掌握產出輔助判斷思考、高品質內容的核心技術。</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-6 p-6 glass-card rounded-2xl">
+                    <div class="flex-shrink-0 w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center font-bold">2</div>
+                    <div>
+                        <h4 class="font-bold text-lg text-indigo-300">AI 修改與優化技術</h4>
+                        <p class="text-slate-400">學會用 AI 優化 Prompt，並透過多模型交叉驗證確保資訊的真實性與準確性。</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-6 p-6 glass-card rounded-2xl">
+                    <div class="flex-shrink-0 w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center font-bold">3</div>
+                    <div>
+                        <h4 class="font-bold text-lg text-indigo-300">數據與邏輯分析力</h4>
+                        <p class="text-slate-400">解決 AI 抓錯資料的痛點，學習從繁瑣數據中過濾出真正有價值的決策依據。</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-6 p-6 glass-card rounded-2xl">
+                    <div class="flex-shrink-0 w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center font-bold">4</div>
+                    <div>
+                        <h4 class="font-bold text-lg text-indigo-300">全方位工具協作能力</h4>
+                        <p class="text-slate-400">從深入研究到零代碼架站，全面掌握 AI 賦能的廣度與實作。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 報名連結區塊 -->
+    <section id="register" class="py-24 px-6 text-center">
+        <div class="max-w-3xl mx-auto glass-card p-12 rounded-3xl border-2 border-indigo-500/50">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">準備好擁抱 AI 科技，<br>成為領先者了嗎？</h2>
+            <p class="text-slate-400 mb-10">改變觀念，從現在開始練習。讓 AI 成為你最強大的隊友。</p>
+            
+            <!-- 報名按鈕：添加 rel="noopener noreferrer" 與 referrerpolicy="no-referrer" 以確保 SurveyCake 跳轉成功 -->
+            <a href="https://www.surveycake.com/s/xkV1W" 
+               rel="noopener noreferrer" 
+               referrerpolicy="no-referrer"
+               class="inline-block px-12 py-5 bg-gradient-to-r from-indigo-600 to-indigo-500 hover:from-indigo-500 hover:to-indigo-400 rounded-2xl font-bold text-xl transition-all transform hover:scale-105 active:scale-95 shadow-xl shadow-indigo-600/30 btn-click-effect">
+                立即填寫報名表
+            </a>
+            <p class="mt-6 text-sm text-slate-500">點擊上方連結即可進入 SurveyCake 報名頁面</p>
+        </div>
+    </section>
+
+    <!-- 頁尾區塊 -->
+    <footer class="py-12 px-6 border-t border-slate-800 text-center">
+        <p class="text-slate-500 text-sm">
+            © 2025 AI 基礎入門課程 | 改變觀念，擁抱科技，樂在學習
+        </p>
+    </footer>
+
+</body>
+</html>
